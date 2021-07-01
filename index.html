@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="brand">
+            <i class="fab fa-accusoft"></i>
+            <h3>Accusoft</h3>
+        </div>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li class="active-tab-button">
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt fa-fw"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-users fa-fw"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-alt fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-shopping-bag fa-fw"></i>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-warehouse fa-fw"></i>
+                            <span>Inventory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-user-circle fa-fw"></i>
+                            <span>Accounts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-alt fa-fw"></i>
+                            <span>Tasks</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="content">
+        <header>
+            <div class="header-container">
+                <span class="page-title">
+                    <i class="fas fa-bars"></i>
+                    <span>Dashboard</span>
+                </span>
+                <div class="searchbox-container">
+                    <i class="fas fa-search" id="search-icon-flip"></i>
+                    <input type="text" placeholder="Search here">
+                </div>
+                <div class="logged-user">
+                    <img src="./assets/man-profile.jpeg" alt="user-avatar">
+                    <div class="user-name-and-role">
+                        <p class="username">John Doe</p>
+                        <p class="role">Super admin</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cards-container">
+                <div class="card-item">
+                    <div class="card-text">
+                        <h1>54</h1>
+                        <p>Customers</p>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fas fa-users fa-fw"></i>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-text">
+                        <h1>79</h1>
+                        <p>Projects</p>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fas fa-file-alt fa-fw"></i>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-text">
+                        <h1>124</h1>
+                        <p>Orders</p>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fas fa-shopping-bag fa-fw"></i>
+                    </div>
+                </div>
+
+                <div class="card-item card-active">
+                    <div class="card-text">
+                        <h1>$6k</h1>
+                        <p>Income</p>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-data">
+                <div class="recent-projects">
+                    <div class="section-header">
+                        <h4 class="section-heading">Recent Projects</h4>
+                        <div class="see-all-button">
+                            <span>See all</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Project title</th>
+                                <th>Department</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color: blue;"></span>
+                                    review
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color: brown;"></span>
+                                    review
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color: red;"></span>
+                                    review
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color: yellow;"></span>
+                                    review
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color: blue;"></span>
+                                    review
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color: purple;"></span>
+                                    review
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color:chartreuse;"></span>
+                                    review
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color: green;"></span>
+                                    review
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>UI Team</td>
+                                <td class="status-container">
+                                    <span class="status-dot" style="background-color: pink;"></span>
+                                    review
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="new-customers">
+                    <div class="section-header">
+                        <h4 class="section-heading">New Customers</h4>
+                        <div class="see-all-button">
+                            <span>See all</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="customers-list">
+                        <div class="list-item">
+                            <img src="./assets/man-profile.jpeg" alt="user-avatar">
+                            <div class="user-info">
+                                <h5>Lewis S.Cunningham</h5>
+                                <p>CEO expert</p>
+                            </div>
+                            <div class="contact-buttons">
+                                <i class="far fa-user-circle"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img src="./assets/man-profile.jpeg" alt="user-avatar">
+                            <div class="user-info">
+                                <h5>Lewis S.Cunningham</h5>
+                                <p>CEO expert</p>
+                            </div>
+                            <div class="contact-buttons">
+                                <i class="far fa-user-circle"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img src="./assets/man-profile.jpeg" alt="user-avatar">
+                            <div class="user-info">
+                                <h5>Lewis S.Cunningham</h5>
+                                <p>CEO expert</p>
+                            </div>
+                            <div class="contact-buttons">
+                                <i class="far fa-user-circle"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img src="./assets/man-profile.jpeg" alt="user-avatar">
+                            <div class="user-info">
+                                <h5>Lewis S.Cunningham</h5>
+                                <p>CEO expert</p>
+                            </div>
+                            <div class="contact-buttons">
+                                <i class="far fa-user-circle"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img src="./assets/man-profile.jpeg" alt="user-avatar">
+                            <div class="user-info">
+                                <h5>Lewis S.Cunningham</h5>
+                                <p>CEO expert</p>
+                            </div>
+                            <div class="contact-buttons">
+                                <i class="far fa-user-circle"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img src="./assets/man-profile.jpeg" alt="user-avatar">
+                            <div class="user-info">
+                                <h5>Lewis S.Cunningham</h5>
+                                <p>CEO expert</p>
+                            </div>
+                            <div class="contact-buttons">
+                                <i class="far fa-user-circle"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img src="./assets/man-profile.jpeg" alt="user-avatar">
+                            <div class="user-info">
+                                <h5>Lewis S.Cunningham</h5>
+                                <p>CEO expert</p>
+                            </div>
+                            <div class="contact-buttons">
+                                <i class="far fa-user-circle"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
