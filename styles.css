@@ -40,7 +40,7 @@
     color: white;
 }
 
-.brand {
+.brand a {
     display: flex;
     align-items: center;
     margin-left: 10px;
@@ -153,6 +153,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
+    row-gap: 20px;
     padding: 40px 0 60px 0;
 }
 
@@ -190,6 +191,7 @@ main {
     display: grid;
     grid-template-columns: calc(65% - 10px) calc(35% - 10px);
     column-gap: 20px;
+    row-gap: 20px;
 }
 
 .project-data .recent-projects,
@@ -267,16 +269,18 @@ thead tr {
     padding: 10px 0;
 }
 
+.list-item .picture-and-name {
+    display: flex;
+}
+
 .customers-list .list-item img {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    margin-right: 15px;
 }
 
 .list-item .user-info {
-    margin-left: -40px !important;
-    display: flex;
-    flex-direction: column;
     font-size: 0.9rem;
 }
 
@@ -290,4 +294,84 @@ thead tr {
 
 .contact-buttons i {
     margin: 0 5px;
+}
+
+/* NAVBAR TOGGLE */
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked + .sidebar {
+    width: 50px;
+}
+
+#nav-toggle:checked + .sidebar a span {
+    display: none;
+}
+
+#nav-toggle:checked ~ .content {
+    margin-left: 50px;
+}
+
+#nav-toggle:checked ~ .content .header-container {
+    position: fixed;
+    left: 50px;
+    width: calc(100% - 50px);
+}
+
+/* SCREEN SIZE 960PX */
+
+@media only screen and (max-width: 960px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-data {
+        grid-template-columns: calc(60% - 10px) calc(40% - 10px);
+    }
+}
+
+/* SCREEN SIZE 800PX */
+
+@media only screen and (max-width: 800px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-data {
+        grid-template-columns: 100%;
+    }
+
+    .searchbox-container {
+        display: none;
+    }
+}
+
+/* SCREEN SIZE 576PX */
+
+@media only screen and (max-width: 576px) {
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-buttons i {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* SCREEN SIZE 400PX */
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 13px;
+    }
+
+    .customers-list .list-item img {
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
 }
