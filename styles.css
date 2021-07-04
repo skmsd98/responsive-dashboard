@@ -34,6 +34,8 @@
     height: 100%;
     padding-left: 10px;
     padding-top: 20px;
+    transition: width 200ms ease;
+    z-index: 1000;
 }
 
 .sidebar * {
