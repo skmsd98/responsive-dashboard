@@ -65,6 +65,10 @@
     margin-right: 15px;
 }
 
+.nav-toggler-in-sidebar {
+    display: none;
+}
+
 /* CONTENT */
 
 .content {
@@ -143,7 +147,7 @@
 /* MAIN CONTENT */
 
 main {
-    min-height: calc(100% - 70px);
+    min-height: calc(100vh - 70px);
     margin-top: 70px;
     background-color: #efefef;
     padding: 20px;
@@ -298,26 +302,104 @@ thead tr {
 
 /* NAVBAR TOGGLE */
 
-#nav-toggle {
+#nav-toggle,
+#nav-toggle:checked + .sidebar a span,
+#nav-toggle:checked + .sidebar .brand h3 {
     display: none;
 }
 
 #nav-toggle:checked + .sidebar {
-    width: 50px;
-}
-
-#nav-toggle:checked + .sidebar a span {
-    display: none;
+    width: 60px;
 }
 
 #nav-toggle:checked ~ .content {
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
 #nav-toggle:checked ~ .content .header-container {
     position: fixed;
-    left: 50px;
-    width: calc(100% - 50px);
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
+/* SCREEN SIZE 1200PX */
+
+@media only screen and (max-width: 1200px) {
+    #nav-toggle:checked + .sidebar {
+        display: block;
+        background-color: var(--primary-color);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        padding-left: 10px;
+        padding-top: 20px;
+        z-index: 1000;
+    }
+
+    .content,
+    #nav-toggle:checked ~ .content {
+        margin-left: 0;
+    }
+
+    .content .header-container,
+    #nav-toggle:checked ~ .content .header-container {
+        position: fixed;
+        left: 0;
+        width: 100%;
+    }
+
+    .header-container .page-title i {
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50px;
+        padding: 7px;
+    }
+
+    #nav-toggle:checked + .sidebar {
+        display: block;
+        background-color: var(--primary-color);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        padding-left: 10px;
+        padding-top: 20px;
+        z-index: 1000;
+    }
+
+    #nav-toggle:checked + .sidebar a span,
+    #nav-toggle:checked + .sidebar .brand h3 {
+        display: inherit;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-toggler-in-sidebar {
+        display: inherit;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    .nav-toggler-in-sidebar i {
+        color: var(--primary-color);
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    .sidebar {
+        display: none;
+    }
 }
 
 /* SCREEN SIZE 960PX */
@@ -343,7 +425,8 @@ thead tr {
         grid-template-columns: 100%;
     }
 
-    .searchbox-container {
+    .searchbox-container,
+    .sidebar {
         display: none;
     }
 }
@@ -356,7 +439,7 @@ thead tr {
     }
 
     .contact-buttons i {
-        font-size: 1.2rem !important;
+        font-size: 16px;
     }
 }
 
